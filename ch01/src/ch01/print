@@ -1,0 +1,3 @@
+public print(){
+	System.out.println("hello");
+}
