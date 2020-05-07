@@ -1,18 +1,27 @@
-package ch05.ch03;
+package ch03;
 
 public class Car {
-  String model;
-  String company;
-  int maxSpeed;
-  
-  //매개변수가 있는 생성자가 소스코드에 있으면 기본생성자를 class에 추가하지않음.
-  //기본생성자도 필요하면, 기본생성자도 소스코드에 등록해주어야함.
-  //Car(){}
-  //기본생성자(DefaultConstructor)는 없고
-  //매개변수가 3개인 생성자만 있음.
-  Car(String model,String company,int maxSpeed){
-	  this.model=model;
-	  this.company=company;
-	  this.maxSpeed=maxSpeed;
-  }
+	//속성
+	private int speed;
+	//기능
+	void run() {
+		System.out.println("달린다.");
+	}
+	void stop() {
+		System.out.println("자동차가 정지합니다.");
+	}
+	void speedUp() {
+		//if(++speed>5) speed=5;
+		speed++;
+	}
+	void speedDown() {
+		if(--speed<0) speed=0;
+	}
+	void getSpeed() {
+		System.out.println(speed);
+	}
+	//메소드 추가
+	  void fullSpeedUp() {
+		  speed=5;
+	  }
 }
