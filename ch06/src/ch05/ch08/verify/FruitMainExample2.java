@@ -62,18 +62,7 @@ public class FruitMainExample2 {
 	 System.out.println("최대판매량 과일정보:"+fruits[fruits.length-1]);
 	 System.out.println("총판매액:"+tot);
 	 System.out.println("평균판매액:"+tot/fruits.length);
-	 
-	   
-		/*
-		 * //판매수량 apple.setSale(20); banana.setSale(50); mango.setSale(35);
-		 * grape.setSale(40);
-		 * 
-		 * Fruit[] fruits = { apple,banana,mango,grape };
-		 * 
-		 * for(int i=0;i<fruits.length;i++) { Fruit fruit=fruits[i];
-		 * System.out.println(fruit.getKind()+":"+fruit.getSale()
-		 * +":"+fruit.getPrice()*fruit.getSale()); }
-		 */
+
 
 	}
 
