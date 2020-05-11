@@ -1,6 +1,7 @@
 package ch10.verify;
 
 public class Car {
+	
 	String kind;//sedan, truck, suv
 	int inTime;
 	int outTime;
