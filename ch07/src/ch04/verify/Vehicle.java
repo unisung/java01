@@ -1,11 +1,11 @@
 package ch04.verify;
 
-public class Vehicle {
+public abstract class Vehicle {
 	final int MAX_FEE = 50000;
 	String kind;
-	int feePerTime;
-	int intTime;
-	int outTime;
+	int feePerTime;//시간당주차비
+	int intTime;//입차시각
+	int outTime;//출차시각
 	
 	public Vehicle(String kind, int feePerTime, int intTime, int outTime) {
 		this.kind = kind;
@@ -13,10 +13,8 @@ public class Vehicle {
 		this.intTime = intTime;
 		this.outTime = outTime;
 	}
-
-	int calcTime() {
-		return 0;
-	}
+    //반드시 재정의 되어함
+	abstract int calcTime();
 	
 	final int calcFee() {
 		int time = calcTime();
@@ -36,5 +34,4 @@ public class Vehicle {
 			System.out.println("주차시간:"+calcTime());
 			System.out.println("주차요금:"+calcFee());
 	 }
-
 }
