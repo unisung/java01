@@ -41,7 +41,7 @@ public class BankApplication {
 		System.out.println("계좌주:");
 		String owner=scanner.next();
 		System.out.println("초기입금액:");
-		int balance=scanner.nextInt();
+		int balance=scanner.nextInt(); //111-111, 111-222, 111-333
 		Account account = new Account(ANO_NO+"-"+(++seq)+seq+seq, owner, balance);
 		//System.out.println(account);
 		for(int i=0;i<accountArray.length;i++) {
